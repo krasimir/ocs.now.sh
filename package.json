@@ -1,8 +1,8 @@
 {
   "_from": "octomments-server@latest",
-  "_id": "octomments-server@0.2.7",
+  "_id": "octomments-server@0.2.8",
   "_inBundle": false,
-  "_integrity": "sha512-dDuzG5YW8/cob0p3DVY8Ay33RLNL1WTOjAfTHb5GyMwyqABXVTgDlESpwxWbQ6kof0xQVb6nVWWp1BWIHkumig==",
+  "_integrity": "sha512-RAigOJd3OeeHfxxUqXCqsbOA0OgWCK1xgQ7wNT837mIbVJCiR2yMT7jyHdPuAVVMWgNejkZE+5O0qzTSQ0168g==",
   "_location": "/octomments-server",
   "_phantomChildren": {},
   "_requested": {
@@ -18,8 +18,8 @@
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/octomments-server/-/octomments-server-0.2.7.tgz",
-  "_shasum": "74c2ad116e460717b988ca2296da2882b3587c72",
+  "_resolved": "https://registry.npmjs.org/octomments-server/-/octomments-server-0.2.8.tgz",
+  "_shasum": "75d2b6ba057e7fb1ce97fb84ec9b3c88634a22f2",
   "_spec": "octomments-server@latest",
   "_where": "/Users/krasimir/Work/Krasimir/octomments-site",
   "bundleDependencies": false,

@@ -9,36 +9,28 @@
     {
       "src": "assets/*.*",
       "use": "@now/static"
+    },
+    {
+      "src": "page/index.html",
+      "use": "@now/static"
     }
   ],
   "routes": [
     {
       "src": "/octomments/issue",
-      "dest": "/api/issue.js",
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "X-Requested-With, Access-Control-Allow-Origin, X-HTTP-Method-Override, Content-Type, Cache-Control, Authorization, Accept"
-      }
+      "dest": "/api/issue.js"
     },
     {
       "src": "/octomments/token",
-      "dest": "/api/token.js",
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "X-Requested-With, Access-Control-Allow-Origin, X-HTTP-Method-Override, Content-Type, Cache-Control, Authorization, Accept"
-      }
+      "dest": "/api/token.js"
     },
     {
       "src": "/assets/(.*)",
-      "dest": "assets/$1",
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "X-Requested-With, Access-Control-Allow-Origin, X-HTTP-Method-Override, Content-Type, Cache-Control, Authorization, Accept"
-      }
+      "dest": "assets/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "api/noop.js"
+      "dest": "page/index.html"
     }
   ]
 }
