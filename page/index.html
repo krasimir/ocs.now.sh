@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>Octomments</title>
-  <link href="/assets/page.css" rel="stylesheet">
-  <link href="/assets/octomments-renderer.min.css" rel="stylesheet">
+  <link href="/page/styles.css" rel="stylesheet">
+  <link href="/assets/ocs-ui.min.css" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <header>
-      <img src="/assets/logo.jpg" alt="Octomments"/>
+      <img src="/page/logo.jpg" alt="Octomments"/>
       <h1>Octomments</h1>
       <h2>
         Using GitHub issues as a comment plugin.<br /><br />
@@ -26,12 +26,12 @@
           <li><a href="https://github.com/krasimir/octomments/tree/master/renderer">Renderer</a> (optional) -  <small>provides a default UI.</small></li>
           <li><a href="https://github.com/krasimir/octomments/tree/master/server">Server</a> (optional) - <small>without this your users will have to go to github.com to add new comments.</small></li>
         </ul>
-        <h3>Client-side assets</h3>
+        <h3>Assets</h3>
         <ul>
-          <li><a href="https://octomments.now.sh/assets/octomments-renderer.min.css" target="_blank">octomments-renderer.min.css</a> - CSS styles used by the default renderer</li>
-          <li><a href="https://octomments.now.sh/assets/octomments.min.js" target="_blank">octomments.min.js</a> - core client</li>
-          <li><a href="https://octomments.now.sh/assets/octomments-renderer.min.js" target="_blank">octomments-renderer.min.js</a> - default renderer</li>
-          <li><a href="https://octomments.now.sh/assets/octomments-pack.min.js" target="_blank">octomments-pack.min.js</a> - core client + renderer bundled in one file.</li>
+          <li><a href="https://ocs.now.sh/assets/ocs-ui.min.css" target="_blank">ocs-ui.min.css</a> - CSS styles used by the default renderer</li>
+          <li><a href="https://ocs.now.sh/assets/ocs.min.js" target="_blank">ocs.min.js</a> - ocs-core.min.js + ocs-ui.min.js bundled in one file.</li>
+          <li><a href="https://ocs.now.sh/assets/ocs-core.min.js" target="_blank">ocs-core.min.js</a> - core client</li>
+          <li><a href="https://ocs.now.sh/assets/ocs-ui.min.js" target="_blank">ocs-ui.min.js</a> - default renderer</li>
         </ul>
         <h3>Setup</h3>
         <pre><code>&lt;div id="comments">&lt;/div>
@@ -56,8 +56,7 @@
       </div>
     </section>
   </div>
-  <script src="/assets/octomments.js"></script>
-  <script src="/assets/octomments-renderer.js"></script>
+  <script src="/assets/ocs.min.js"></script>
   <script>
     Octomments({
       debug: true,

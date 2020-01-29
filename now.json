@@ -11,7 +11,7 @@
       "use": "@now/static"
     },
     {
-      "src": "page/index.html",
+      "src": "page/*.*",
       "use": "@now/static"
     }
   ],
@@ -23,6 +23,10 @@
     {
       "src": "/octomments/token",
       "dest": "/api/token.js"
+    },
+    {
+      "src": "/page/(.*)",
+      "dest": "page/$1"
     },
     {
       "src": "/assets/(.*)",
