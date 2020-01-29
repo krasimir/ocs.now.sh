@@ -43,12 +43,14 @@ h2 {
   padding: 0;
 }
 h3 {
-  text-align: center;
+  font-size: 1.1em;
+  margin: 1em 0;
 }
 section {
   display: grid;
-  grid-template-columns: 44% 4% 44%;
-  column-gap: 4%;
+  grid-template-columns: 44% 44%;
+  column-gap: 2em;
+  margin-bottom: 2em;
 }
 .pointer {
   padding-top: 164px;
@@ -83,14 +85,10 @@ p {
   margin: 0 0 1em 0;
   padding: 0;
 }
-.info {
-  margin: 2em 0;
-  padding: 0;
-}
 hr {
   border-top: none;
   border-bottom: solid 1px #eaeaea;
-  margin: 2em 0;
+  margin: 0.7em 0;
 }
 ul {
   padding: 0;
@@ -100,4 +98,7 @@ ul {
   border: solid 1px #eaeaea;
   padding: 1em;
   border-radius: 4px;
+}
+footer {
+  text-align: center;
 }
