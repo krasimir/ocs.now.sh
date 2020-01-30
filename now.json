@@ -7,10 +7,6 @@
       "use": "@now/node"
     },
     {
-      "src": "assets/*.*",
-      "use": "@now/static"
-    },
-    {
       "src": "page/*.*",
       "use": "@now/static"
     }
@@ -27,10 +23,6 @@
     {
       "src": "/page/(.*)",
       "dest": "page/$1"
-    },
-    {
-      "src": "/assets/(.*)",
-      "dest": "assets/$1"
     },
     {
       "src": "/(.*)",

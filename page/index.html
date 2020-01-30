@@ -4,8 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>Octomments</title>
+  <meta name="copyright" content="Krasimir Tsonev" />
+	<meta name="robots" content="follow,index" />
+	<meta name="title" content="Octomments" />
+	<meta name="keywords" content="Octomments, comments, github, issues" lang="en-us" />
+	<meta name="description" content="Octomments - using GitHub as a comment plugin" />
   <link href="/page/styles.css" rel="stylesheet">
-  <link href="/assets/ocs-ui.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/octomments/build/ocs-ui.min.css" rel="stylesheet">
+  <meta property="og:description" content="Octomments - using GitHub as a comment plugin">
+	<meta property="og:image" content="/page/logo.jpg">
+	<meta property="og:title" content="Octomments - using GitHub as a comment plugin" />
 </head>
 <body>
   <div class="container">
@@ -17,27 +25,18 @@
         <!-- Place this tag where you want the button to render. -->
         <a class="github-button" href="https://github.com/krasimir/octomments" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star krasimir/octomments on GitHub">Star</a>
       </h2>
+      <div class="description">
+        <a href="https://github.com/krasimir/octomments" target="_blank">Documentation</a>&nbsp;&#183;
+        <a href="http://krasimirtsonev.com/blog" target="_blank">Author</a>
+      </div>
     </header>
     <section>
       <div>
-        <h3>Packages</h3>
-        <ul>
-          <li><a href="https://github.com/krasimir/octomments/tree/master/client">Client</a> (required) - <small>you need this to fetch the comments from GitHub</small></li>
-          <li><a href="https://github.com/krasimir/octomments/tree/master/renderer">Renderer</a> (optional) -  <small>provides a default UI.</small></li>
-          <li><a href="https://github.com/krasimir/octomments/tree/master/server">Server</a> (optional) - <small>without this your users will have to go to github.com to add new comments.</small></li>
-        </ul>
-        <h3>Assets</h3>
-        <ul>
-          <li><a href="https://ocs.now.sh/assets/ocs-ui.min.css" target="_blank">ocs-ui.min.css</a> - CSS styles used by the default renderer</li>
-          <li><a href="https://ocs.now.sh/assets/ocs.min.js" target="_blank">ocs.min.js</a> - ocs-core.min.js + ocs-ui.min.js bundled in one file.</li>
-          <li><a href="https://ocs.now.sh/assets/ocs-core.min.js" target="_blank">ocs-core.min.js</a> - core client</li>
-          <li><a href="https://ocs.now.sh/assets/ocs-ui.min.js" target="_blank">ocs-ui.min.js</a> - default renderer</li>
-        </ul>
-        <h3>Setup</h3>
-        <pre><code>&lt;div id="comments">&lt;/div>
-
-&lt;link href="octomments-renderer.min.css" rel="stylesheet"&gt;
-&lt;script src="octomments-pack.min.js">&lt;/script&gt;
+        <p>Quick start. Add the following tag on the place where you want the comments to appear:</p>
+        <pre><code>&lt;div id="comments">&lt;/div></code></pre>
+        <p>Then drop the following code at the end of the page.</p>
+        <pre><code>&lt;link href="https://unpkg.com/octomments/build/ocs-ui.min.css" rel="stylesheet"&gt;
+&lt;script src="https://unpkg.com/octomments/build/ocs.min.js">&lt;/script&gt;
 &lt;script&gt;
   Octomments({
     github: {
@@ -48,15 +47,14 @@
     renderer: [OctommentsRenderer, '#comments']
   }).init();
 &lt;script&gt;</code></pre>
-        <br /><br />
-        <small>Octomments is an open source project. Bug reports and feature requests <a href="https://github.com/krasimir/octomments">here</a>.<br />Author: <a href="http://krasimirtsonev.com/blog">Krasimir Tsonev</a></small>
       </div>
+      <p>And, the result is ... 👇</p>
       <div>
         <div id="comments"></div>
       </div>
     </section>
   </div>
-  <script src="/assets/ocs.min.js"></script>
+  <script src="https://unpkg.com/octomments/build/ocs.min.js"></script>
   <script>
     Octomments({
       debug: true,

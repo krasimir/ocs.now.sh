@@ -39,7 +39,7 @@ h2 {
   font-size: 1.3em;
   font-weight: normal;
   text-align: center;
-  margin: 0 0 4em 0;
+  margin: 0;
   padding: 0;
 }
 h3 {
@@ -47,25 +47,8 @@ h3 {
   margin: 1em 0;
 }
 section {
-  display: grid;
-  grid-template-columns: 44% 44%;
-  column-gap: 2em;
-  margin-bottom: 2em;
-}
-.pointer {
-  padding-top: 164px;
-  font-size: 3em;
-}
-@media all and (max-width: 850px) {
-  section {
-    display: block;
-  }
-  section .pointer {
-    display: none;
-  }
-  section > div {
-    margin-bottom: 3em;
-  }
+  max-width: 650px;
+  margin: 0 auto;
 }
 pre {
   overflow: auto;
@@ -74,9 +57,9 @@ pre {
   font-family: inherit;
   border: solid 1px #eaeaea;
   border-radius: 4px;
-  padding: 2em;
+  padding: 1em 1.5em;
   color: #666;
-  margin: 0;
+  margin: 0 0 1em 0;
 }
 pre code {
   font-family: inherit;
@@ -99,6 +82,8 @@ ul {
   padding: 1em;
   border-radius: 4px;
 }
-footer {
+.description {
+  max-width: 650px;
   text-align: center;
+  margin: 2em auto 4em auto;
 }
