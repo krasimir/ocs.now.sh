@@ -26,17 +26,20 @@
         <a class="github-button" href="https://github.com/krasimir/octomments" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star krasimir/octomments on GitHub">Star</a>
       </h2>
       <div class="description">
+        <p style="margin-bottom: 3em;opacity:0.7;"><small>87% of <a href="http://krasimirtsonev.com/blog">my blog</a> readers are using Chrome on desktop. This means that I have the luxury to care less about performance. However, I just recently found that the site has 56 (out of 100) points on Google's pagespeed test. That's not good. The report says that my Disqus comments are blocking the main thread for ~900ms. I want comments on my blog but I also want my users to reach the content as quickly as possible. So, I've made <strong>Octomments</strong>!.</small></p>
         <a href="https://github.com/krasimir/octomments" target="_blank">Documentation</a>&nbsp;&#183;
-        <a href="http://krasimirtsonev.com/blog" target="_blank">Author</a>
+        <a href="http://krasimirtsonev.com/blog" target="_blank">Author</a>&nbsp;&#183;
+        <a href="https://krasimirtsonev.com/blog/article/octomments-github-issues-as-comment-plugin" target="_blank">Full story</a>
       </div>
     </header>
     <section>
       <div>
-        <p>Quick start. Add the following tag on the place where you want the comments to appear:</p>
+        <p>1️⃣ Go here <a href="https://github.com/apps/octomments" target="_blank">github.com/apps/octomments</a> and install Octomments GitHub App on the repo that will host your comments.</p>
+        <p>2️⃣ Add the following tag on the place where you want the comments to appear:</p>
         <pre><code>&lt;div id="comments">&lt;/div></code></pre>
-        <p>In your page's &lthead> tag:</p>
+        <p>3️⃣ In your page's &lthead> tag:</p>
         <pre><code>&lt;link href="https://unpkg.com/octomments/build/ocs-ui.min.css" rel="stylesheet"&gt;</code></pre>
-        <p>Then drop the following code at the end of the page.</p>
+        <p>4️⃣ Then drop the following code at the end of the page.</p>
         <pre><code>&lt;script src="https://unpkg.com/octomments/build/ocs.min.js">&lt;/script&gt;
 &lt;script&gt;
   Octomments({
@@ -44,12 +47,12 @@
       owner: 'krasimir',
       repo: 'octomments',
     },
-    number: 1,
+    issueNumber: 1,
     renderer: [OctommentsRenderer, '#comments']
   }).init();
 &lt;script&gt;</code></pre>
       </div>
-      <p>And, the result is ... 👇</p>
+      <p>🎉 And, the result is ...</p>
       <div>
         <div id="comments"></div>
       </div>
@@ -63,7 +66,7 @@
         owner: 'krasimir',
         repo: 'octomments',
       },
-      number: 1,
+      issueNumber: 1,
       renderer: [OctommentsRenderer, '#comments'],
       endpoints: {
         issue: '/octomments/issue',
