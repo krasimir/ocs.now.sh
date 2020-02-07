@@ -52,14 +52,14 @@ section {
 }
 pre {
   overflow: auto;
-  font-size: 0.8em;
+  font-size: 0.6em;
   line-height: 1.6em;
   font-family: inherit;
   border: solid 1px #eaeaea;
   border-radius: 4px;
-  padding: 1em 1.5em;
+  padding: 0.6em 0.8em;
   color: #666;
-  margin: 0 0 1em 0;
+  margin: 1em 0 1em 0;
 }
 pre code {
   font-family: inherit;
@@ -86,4 +86,14 @@ ul {
   max-width: 650px;
   text-align: center;
   margin: 2em auto 4em auto;
+}
+.step {
+  font-size: 1.4em;
+  margin-bottom: 1.4em;
+}
+.step-desc {
+  font-size: 0.6em;
+  display: block;
+  opacity: 0.7;
+  margin: 0.4em 0 0 0;
 }

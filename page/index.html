@@ -33,13 +33,23 @@
       </div>
     </header>
     <section>
-      <div>
-        <p>1️⃣ Go here <a href="https://github.com/apps/octomments" target="_blank">github.com/apps/octomments</a> and install Octomments GitHub App on the repo that will host your comments.</p>
-        <p>2️⃣ Add the following tag on the place where you want the comments to appear:</p>
+      <div class="step">
+        1️⃣ Go <a href="https://github.com/apps/octomments" target="_blank">here</a> and install <a href="https://github.com/apps/octomments" target="_blank">Octomments GitHub App</a> on the repo that will host your comments.
+        <small class="step-desc">The users will authorize this app to comment of their behalf.</small>
+      </div>
+      <div class="step">
+        2️⃣ Add the following tag on the place where you want the comments to appear:
+        <small class="step-desc">Here Octomments will render the UI.</small>
         <pre><code>&lt;div id="comments">&lt;/div></code></pre>
-        <p>3️⃣ In your page's &lthead> tag:</p>
+      </div>
+      <div class="step">
+        3️⃣ In your page's &lthead> tag:
+        <small class="step-desc">The Octomments CSS styles.</small>
         <pre><code>&lt;link href="https://unpkg.com/octomments/build/ocs-ui.min.css" rel="stylesheet"&gt;</code></pre>
-        <p>4️⃣ Then drop the following code at the end of the page.</p>
+      </div>
+      <div class="step">
+        4️⃣ Then drop the following code at the end of the page.
+        <small class="step-desc">The Octomments core + renderer. The code initializes the plugin.</small>
         <pre><code>&lt;script src="https://unpkg.com/octomments/build/ocs.min.js">&lt;/script&gt;
 &lt;script&gt;
   Octomments({
@@ -52,7 +62,9 @@
   }).init();
 &lt;script&gt;</code></pre>
       </div>
-      <p>🎉 And, the result is ...</p>
+      <div class="step">
+        🎉 And, the result is ...
+      </div>
       <div>
         <div id="comments"></div>
       </div>
